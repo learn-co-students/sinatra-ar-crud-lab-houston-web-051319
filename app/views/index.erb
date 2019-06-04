@@ -1,0 +1,15 @@
+<h1>Articles</h1>
+
+<div>
+    <a href="http://127.0.0.1:9393/articles/new">Create a new article</a>
+</div>
+
+<% @articles.each do |each_article|%>
+
+    <div>
+        <h3><%=each_article.title%></h3>
+        <a href="http://127.0.0.1:9393/articles/<%=each_article.id%>">Read this article</a>
+        <p>______________________________________________________________________________</p>
+    </div>
+
+<% end %>
